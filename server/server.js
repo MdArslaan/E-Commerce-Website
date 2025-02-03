@@ -33,12 +33,12 @@ const connectDB = async () => {
 };
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 6000;
 
 app.use(
   cors({
-    // origin: "http://localhost:5173",
-    origin: "https://e-commerce-website-q3t1.onrender.com",
+    origin: "http://localhost:5173",
+    // origin: "*", // Allow all origins
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
       "Content-Type",
